@@ -1,0 +1,1019 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Titulo de la Página -->
+    <title>EB Computadoras</title>
+    <!-- STYLE.CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="css/ventas.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/2.3.0/uicons-regular-rounded/css/uicons-regular-rounded.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/2.3.0/uicons-regular-straight/css/uicons-regular-straight.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/2.3.0/uicons-thin-rounded/css/uicons-thin-rounded.css" />
+
+    <!-- FAVICON (ICONO DE LA PÁGINA) -->
+    <link
+      rel="shortcut icon"
+      href="img/favicon/favicon.png"
+      type="image/x-icon" />
+  </head>
+  <body>
+    <div id="header" class="Container__ventas">
+      <!-- NAVBAR -->
+      <nav class="nav">
+        <div class="header">
+          <picture class="carrito">
+            <img src="img/ventas/carrito.svg" alt="carrito" />
+            <span id="mensajito">¿Qué esperas para comprar algo?</span>
+          </picture>
+          <a href="index.html#banner">
+            <picture class="logo__eb">
+              <img src="img/banner/eb_image.svg" alt="EB" />
+              <img src="img/banner/comp_image.svg" alt="Computadoras" />
+            </picture>
+          </a>
+
+          <div class="redes__sociales">
+            <picture>
+              <a
+                target="_blank"
+                href="https://www.instagram.com/ebcomputadoras/">
+                <img src="img/ventas/instagram.svg" alt="instagram" />
+              </a>
+            </picture>
+            <picture>
+              <a
+                target="_blank"
+                href="https://www.facebook.com/ebcomputadoras?locale=es_LA">
+                <img src="img/ventas/facebook.svg" alt="facebook" />
+              </a>
+            </picture>
+            <picture>
+              <a
+                target="_blank"
+                href="https://api.whatsapp.com/send?phone=%2B18095746888&data=ARAdDLLSIf5JjP6FwYcyURjEJYEbG_mjDc5DkaKb8u5nXMBT1C5Zux6Ct1snt1_J-OSBqNO9BjJotg3T-_P6nPWUwd0Xd3DttqDrBCadaN9sB_Whz34vJhRtAxMe4qKJO9unu6LXDUbkWy6_NGcaOfFwYA&source=FB_Page&app=facebook&entry_point=page_cta&fbclid=IwAR1yRkBMI5jYQzOhVBK5hrEiosHHVxrZWUWzzQzdO8nqt2R-TxX4VaKtR8g_aem_AaHe6jlVX_QxtqjfLCRNAsDDb1MCSj3S0n8OpVTkgyq8ZBE8XXBfZ6KJvs5ZdsziBT16Hq2PK0eaZBbn_ObNTF9Z">
+                <img src="img/ventas/whatsapp.svg" alt="Whatsapp" />
+              </a>
+            </picture>
+          </div>
+        </div>
+
+        <label class="label" for="menu">
+          <img src="img/nav/menu.svg" alt="" />
+        </label>
+        <input class="nav__label" type="checkbox" id="menu" />
+
+        <div class="links">
+          <a href="index.html#cliente">Inicio</a>
+          <a href="index.html#Servicios">Servicios</a>
+          <a href="index.html#consejos">Consejos</a>
+          <a onclick="aqui()" id="aqui">Ventas</a>
+          <a href="#Contactos">Contactos</a>
+        </div>
+      </nav>
+      <!-- BANNER -->
+      <div class="contenedor">
+        <div class="slider-contenedor">
+          <section class="contenido-slider">
+            <img src="img/ventas/ba1.png" alt="" />
+          </section>
+          <section class="contenido-slider">
+            <img src="img/ventas/ba2.png" alt="" />
+          </section>
+          <section class="contenido-slider">
+            <img src="img/ventas/ba3.png" alt="" />
+          </section>
+          <section class="contenido-slider">
+            <img src="img/ventas/ba4.png" alt="" />
+          </section>
+          <section class="contenido-slider">
+            <img src="img/ventas/ba1.png" alt="" />
+          </section>
+        </div>
+      </div>
+      <!-- CONTENT -->
+      <section class="ventas">
+        <input type="checkbox" id="filtre" class="check__filtro" />
+        <!-- Filtro -->
+        <div id="elemento" class="filtro__ventas">
+          <div class="filtro">
+            <label for="filtre">Filtro <i class="fi fi-rs-filter"></i></label>
+          </div>
+          <span class="item" data-filter="todos">Todos</span>
+          <span class="item" data-filter="monitores">Monitores</span>
+          <span class="item" data-filter="ordenadores">Ordenadores</span>
+          <span class="item" data-filter="componentes">Componentes</span>
+          <span class="item" data-filter="seguridad">Seguridad</span>
+          <span class="item" data-filter="papeleria">Papelería</span>
+          <span class="item" data-filter="impresoras">Impresoras</span>
+          <span class="item" data-filter="redes">Redes</span>
+        </div>
+        <!-- --------------------- -->
+
+        <div class="productos__ventas">
+          <div class="productos">
+            <div class="producto monitores">
+              <picture>
+                <img
+                  loading="lazy"
+                  src="img/ventas/productos/monitores/monitor-s2425h.webp"
+                  alt="" />
+              </picture>
+              <p class="description__producto">Monitor Dell 24 - S2425H</p>
+              <span class="precio">6,000.00</span>
+              <button class="button" onclick="comprar()">
+                <i class="fi fi-tr-cart-arrow-down"></i> Add To Cart
+              </button>
+            </div>
+
+            <div class="producto ordenadores">
+              <picture>
+                <img
+                  loading="lazy"
+                  src="img/ventas/productos/ordenadores/7050.webp"
+                  alt="" />
+              </picture>
+              <p class="description__producto">Optiplex 7050</p>
+              <span class="precio">7,500.00</span>
+              <button class="button" onclick="comprar()">
+                <i class="fi fi-tr-cart-arrow-down"></i> Add To Cart
+              </button>
+            </div>
+
+            <div class="producto monitores">
+              <picture class="gaming">
+                <img
+                  loading="lazy"
+                  src="img/ventas/productos/monitores/s3422dwg.webp"
+                  alt="" />
+              </picture>
+              <p class="description__producto">
+                Monitor curvo para juegos Dell 34 – S3422DWG
+              </p>
+              <span class="precio">14,500.00</span>
+              <button class="button" onclick="comprar()">
+                <i class="fi fi-tr-cart-arrow-down"></i> Add To Cart
+              </button>
+            </div>
+
+            <div class="producto monitores">
+              <picture>
+                <img
+                  loading="lazy"
+                  src="img/ventas/productos/monitores/monitor-s2425hs.webp"
+                  alt="" />
+              </picture>
+              <p class="description__producto">Monitor Dell 24: S2425HS</p>
+              <span class="precio">6,500.00</span>
+              <button class="button" onclick="comprar()">
+                <i class="fi fi-tr-cart-arrow-down"></i> Add To Cart
+              </button>
+            </div>
+
+            <div class="producto monitores">
+              <picture>
+                <img
+                  loading="lazy"
+                  src="img/ventas/productos/monitores/monitor-alienware-aw3225qf.webp"
+                  alt="" />
+              </picture>
+              <p class="description__producto">
+                Monitor gaming QD-OLED 4K Alienware de 81,28 cm (32") - AW3225QF
+              </p>
+              <span class="precio">12,600.00</span>
+              <button class="button" onclick="comprar()">
+                <i class="fi fi-tr-cart-arrow-down"></i> Add To Cart
+              </button>
+            </div>
+
+            <div class="producto seguridad">
+              <picture>
+                <img
+                  loading="lazy"
+                  src="img/ventas/productos/camaras/camera_ezviz_c8w.png"
+                  alt="" />
+              </picture>
+              <p class="description__producto">Camara ezviz C8W</p><br>
+              <span class="precio">3,000.00</span>
+              <button class="button" onclick="comprar()">
+                <i class="fi fi-tr-cart-arrow-down"></i> Add To Cart
+              </button>
+            </div>
+
+            <div class="producto ordenadores">
+              <picture>
+                <img
+                  loading="lazy"
+                  src="img/ventas/productos/ordenadores/7010.webp"
+                  alt="" />
+              </picture>
+              <p class="description__producto">Optiplex 7010</p><br>
+              <span class="precio">5,300.00</span>
+              <button class="button" onclick="comprar()">
+                <i class="fi fi-tr-cart-arrow-down"></i> Add To Cart
+              </button>
+            </div>
+
+            <div class="producto ordenadores">
+              <picture>
+                <img
+                  loading="lazy"
+                  src="img/ventas/productos/ordenadores/7020.webp"
+                  alt="" />
+              </picture>
+              <p class="description__producto">Optiplex 7020</p><br>
+              <span class="precio">5,500.00</span>
+              <button class="button" onclick="comprar()">
+                <i class="fi fi-tr-cart-arrow-down"></i> Add To Cart
+              </button>
+            </div>
+
+            <div class="producto ordenadores">
+              <picture>
+                <img
+                  loading="lazy"
+                  src="img/ventas/productos/ordenadores/760.webp"
+                  alt="" />
+              </picture>
+              <p class="description__producto">Optiplex 760</p>
+              <span class="precio">4,900.00</span>
+              <button class="button" onclick="comprar()">
+                <i class="fi fi-tr-cart-arrow-down"></i> Add To Cart
+              </button>
+            </div>
+
+            <div class="producto ordenadores">
+              <picture>
+                <img
+                  loading="lazy"
+                  src="img/ventas/productos/ordenadores/9020.webp"
+                  alt="" />
+              </picture>
+              <p class="description__producto">Optiplex 9020</p>
+              <span class="precio">6,800.00</span>
+              <button class="button" onclick="comprar()">
+                <i class="fi fi-tr-cart-arrow-down"></i> Add To Cart
+              </button>
+            </div>
+
+            <div class="producto seguridad">
+              <picture>
+                <img
+                  loading="lazy"
+                  src="img/ventas/productos/camaras/camera_h8_pro.png"
+                  alt="" />
+              </picture>
+              <p class="description__producto">Camara ezviz H8 Pro</p>
+              <span class="precio">3,400.00</span>
+              <button class="button" onclick="comprar()">
+                <i class="fi fi-tr-cart-arrow-down"></i> Add To Cart
+              </button>
+            </div>
+
+            <div class="producto componentes">
+              <picture>
+                <img
+                  id="ram_2c"
+                  loading="lazy"
+                  src="img/ventas/productos/componentes/2c-me01_ram-removebg-preview.png"
+                  alt="" />
+              </picture>
+              <p class="description__producto">Memoria RAM PC 2C-ME01</p>
+              <span class="precio">1,000.00</span>
+              <button class="button" onclick="comprar()">
+                <i class="fi fi-tr-cart-arrow-down"></i> Add To Cart
+              </button>
+            </div>
+
+            <div class="producto componentes">
+              <picture>
+                <img
+                  id="king1"
+                  loading="lazy"
+                  src="img/ventas/productos/componentes/Kingston_usb.webp"
+                  alt="" />
+              </picture>
+              <p class="description__producto">Memoria USB Kingstone 32GB</p><br>
+              <span class="precio">550.00</span>
+              <button class="button" onclick="comprar()">
+                <i class="fi fi-tr-cart-arrow-down"></i> Add To Cart
+              </button>
+            </div>
+
+            <div class="producto monitores">
+              <picture>
+                <img
+                  loading="lazy"
+                  src="img/ventas/productos/monitores/peripherals_monitor_p2422he.webp"
+                  alt="" />
+              </picture>
+              <p class="description__producto">
+                Monitor Dell 60,96 cm (24") con concentrador USB-C - P2422HE
+              </p>
+              <span class="precio">6,200.00</span>
+              <button class="button" onclick="comprar()">
+                <i class="fi fi-tr-cart-arrow-down"></i> Add To Cart
+              </button>
+            </div>
+
+            <div class="producto componentes">
+              <picture>
+                <img
+                  loading="lazy"
+                  src="img/ventas/productos/componentes/ssd_adata_2.png"
+                  alt="" />
+              </picture>
+              <p class="description__producto">Disco Solido SSD Adata 120GB</p>
+              <span class="precio">1,900.00</span>
+              <button class="button" onclick="comprar()">
+                <i class="fi fi-tr-cart-arrow-down"></i> Add To Cart
+              </button>
+            </div>
+
+            <div class="producto monitores">
+              <picture>
+                <img
+                  loading="lazy"
+                  src="img/ventas/productos/monitores/peripherals_monitor_p2422h.webp"
+                  alt="" />
+              </picture>
+              <p class="description__producto">Monitor Dell 24 - P2422H</p><br>
+              <span class="precio">5,000.00</span>
+              <button class="button" onclick="comprar()">
+                <i class="fi fi-tr-cart-arrow-down"></i> Add To Cart
+              </button>
+            </div>
+
+            <div class="producto componentes">
+              <picture>
+                <img
+                  loading="lazy"
+                  src="img/ventas/productos/componentes/fire_tv_stick-removebg-preview.png"
+                  alt="" />
+              </picture>
+              <p class="description__producto">Fire TV Stick</p>
+              <span class="precio">2,000.00</span>
+              <button class="button" onclick="comprar()">
+                <i class="fi fi-tr-cart-arrow-down"></i> Add To Cart
+              </button>
+            </div>
+
+            <div class="producto ordenadores">
+              <picture>
+                <img
+                  loading="lazy"
+                  src="img/ventas/productos/ordenadores/390.webp"
+                  class="ordenador" />
+              </picture>
+              <p class="description__producto">Optiplex 390</p>
+              <span class="precio">3,800.00</span>
+              <button class="button" onclick="comprar()">
+                <i class="fi fi-tr-cart-arrow-down"></i> Add To Cart
+              </button>
+            </div>
+
+            <div class="producto componentes">
+              <picture>
+                <img
+                  loading="lazy"
+                  src="img/ventas/productos/componentes/hdtv_to_vga_adapter-removebg-preview.png"
+                  alt="" />
+              </picture>
+              <p class="description__producto">Adaptador HDTV a VGA</p>
+              <span class="precio">350.00</span>
+              <button class="button" onclick="comprar()">
+                <i class="fi fi-tr-cart-arrow-down"></i> Add To Cart
+              </button>
+            </div>
+
+            <div class="producto componentes">
+              <picture>
+                <img
+                  id="king2"
+                  loading="lazy"
+                  src="img/ventas/productos/componentes/Kingston_usb_2.webp"
+                  alt="" />
+              </picture>
+              <p class="description__producto">Memoria USB Kingstone 64GB</p>
+              <span class="precio">790.00</span>
+              <button class="button" onclick="comprar()">
+                <i class="fi fi-tr-cart-arrow-down"></i> Add To Cart
+              </button>
+            </div>
+
+            <div class="producto componentes">
+              <picture>
+                <img
+                  loading="lazy"
+                  src="img/ventas/productos/componentes/ssd_adata.png"
+                  alt="" />
+              </picture>
+              <p class="description__producto">Disco Solido SSD Adata 1T</p>
+              <span class="precio">4,990.00</span>
+              <button class="button" onclick="comprar()">
+                <i class="fi fi-tr-cart-arrow-down"></i> Add To Cart
+              </button>
+            </div>
+
+            <div class="producto componentes">
+              <picture>
+                <img
+                  id="tridentz"
+                  loading="lazy"
+                  src="img/ventas/productos/componentes/tridentZ_ddr5-removebg-preview.png"
+                  alt="" />
+              </picture>
+              <p class="description__producto">Memoria RAM Trident Z DDR5</p>
+              <span class="precio">5,700.00</span>
+              <button class="button" onclick="comprar()">
+                <i class="fi fi-tr-cart-arrow-down"></i> Add To Cart
+              </button>
+            </div>
+
+            <div class="producto componentes">
+              <picture>
+                <img
+                  loading="lazy"
+                  src="img/ventas/productos/componentes/fire_tv_stick_4k-removebg-preview.png"
+                  alt="" />
+              </picture>
+              <p class="description__producto">Fire TV Stick 4K</p>
+              <span class="precio">2,550.00</span>
+              <button class="button" onclick="comprar()">
+                <i class="fi fi-tr-cart-arrow-down"></i> Add To Cart
+              </button>
+            </div>
+
+            <div class="producto componentes">
+              <picture>
+                <img
+                  loading="lazy"
+                  src="img/ventas/productos/componentes/XTA-180-mousepad-removebg-preview.png"
+                  alt="" />
+              </picture>
+              <p class="description__producto">MousePad XTech XTA-180</p>
+              <span class="precio">1,300.00</span>
+              <button class="button" onclick="comprar()">
+                <i class="fi fi-tr-cart-arrow-down"></i> Add To Cart
+              </button>
+            </div>
+
+            <div class="producto componentes">
+              <picture>
+                <img
+                  loading="lazy"
+                  src="img/ventas/productos/componentes/XTA-526-mousepad-removebg-preview.png"
+                  alt="" />
+              </picture>
+              <p class="description__producto">MousePad XTech XTA-526</p>
+              <span class="precio">1,400.00</span>
+              <button class="button" onclick="comprar()">
+                <i class="fi fi-tr-cart-arrow-down"></i> Add To Cart
+              </button>
+            </div>
+
+            <div class="producto ordenadores">
+              <picture>
+                <img
+                  loading="lazy"
+                  src="img/ventas/productos/ordenadores/7040.webp"
+                  alt="" />
+              </picture>
+              <p class="description__producto">Optiplex 7040</p>
+              <span class="precio">5,700.00</span>
+              <button class="button" onclick="comprar()">
+                <i class="fi fi-tr-cart-arrow-down"></i> Add To Cart
+              </button>
+            </div>
+
+            <div class="producto componentes">
+              <picture>
+                <img
+                  loading="lazy"
+                  src="img/ventas/productos/componentes/XTC-318_cable-removebg-preview.png"
+                  alt="" />
+              </picture>
+              <p class="description__producto">Cable Paralel a USB 2.0</p>
+              <span class="precio">895.00</span>
+              <button class="button" onclick="comprar()">
+                <i class="fi fi-tr-cart-arrow-down"></i> Add To Cart
+              </button>
+            </div>
+
+            <div class="producto componentes">
+              <picture>
+                <img
+                  loading="lazy"
+                  src="img/ventas/productos/componentes/XTM-165-removebg-preview.png"
+                  alt="" />
+              </picture>
+              <p class="description__producto">Mouse XTech XTM-165</p>
+              <span class="precio">920.00</span>
+              <button class="button" onclick="comprar()">
+                <i class="fi fi-tr-cart-arrow-down"></i> Add To Cart
+              </button>
+            </div>
+
+            <div class="producto monitores">
+              <picture>
+                <img
+                  loading="lazy"
+                  src="img/ventas/productos/monitores/monitor-pseries-p2425he.webp"
+                  alt="" />
+              </picture>
+              <p class="description__producto">
+                Monitor Dell 24 con concentrador USB-C® - P2425HE
+              </p>
+              <span class="precio">6,100.00</span>
+              <button class="button" onclick="comprar()">
+                <i class="fi fi-tr-cart-arrow-down"></i> Add To Cart
+              </button>
+            </div>
+            <div class="producto componentes">
+              <picture>
+                <img
+                  loading="lazy"
+                  src="img/ventas/productos/componentes/XTM-175-removebg-preview.png"
+                  alt="" />
+              </picture>
+              <p class="description__producto">Mouse XTech XTM-175</p><br>
+              <span class="precio">940.00</span>
+              <button class="button" onclick="comprar()">
+                <i class="fi fi-tr-cart-arrow-down"></i> Add To Cart
+              </button>
+            </div>
+
+            <div class="producto componentes">
+              <picture>
+                <img
+                  loading="lazy"
+                  src="img/ventas/productos/componentes/XTM-185-removebg-preview.png"
+                  alt="" />
+              </picture>
+              <p class="description__producto">Mouse XTech XTM-185</p><br>
+              <span class="precio">980.00</span>
+              <button class="button" onclick="comprar()">
+                <i class="fi fi-tr-cart-arrow-down"></i> Add To Cart
+              </button>
+            </div>
+
+            <div class="producto impresoras">
+              <picture>
+                <img
+                  loading="lazy"
+                  src="img/ventas/productos/impresoras/ecotank_L1210-removebg-preview.png"
+                  alt="" />
+              </picture>
+              <p class="description__producto">Impresora Ecotank L1210</p><br>
+              <span class="precio">12,000.00</span>
+              <button class="button" onclick="comprar()">
+                <i class="fi fi-tr-cart-arrow-down"></i> Add To Cart
+              </button>
+            </div>
+
+            <div class="producto impresoras">
+              <picture>
+                <img
+                  loading="lazy"
+                  src="img/ventas/productos/impresoras/ecotank_L3210-removebg-preview.png"
+                  alt="" />
+              </picture>
+              <p class="description__producto">Impresora Ecotank L3210</p>
+              <span class="precio">13,000.00</span>
+              <button class="button" onclick="comprar()">
+                <i class="fi fi-tr-cart-arrow-down"></i> Add To Cart
+              </button>
+            </div>
+
+            <div class="producto redes">
+              <picture>
+                <img
+                  loading="lazy"
+                  src="img/ventas/productos/redes/RE305-01_1487555842506k-removebg-preview.png"
+                  alt="" />
+              </picture>
+              <p class="description__producto">
+                RE305 AC1200 Wi-Fi Range Extender
+              </p>
+              <span class="precio">4,000.00</span>
+              <button class="button" onclick="comprar()">
+                <i class="fi fi-tr-cart-arrow-down"></i> Add To Cart
+              </button>
+            </div>
+
+            <div class="producto impresoras">
+              <picture>
+                <img
+                  loading="lazy"
+                  src="img/ventas/productos/impresoras/impresora_ecotank_L3250-removebg-preview.png"
+                  alt="" />
+              </picture>
+              <p class="description__producto">Impresora Ecotank L3250</p>
+              <span class="precio">15,000.00</span>
+              <button class="button" onclick="comprar()">
+                <i class="fi fi-tr-cart-arrow-down"></i> Add To Cart
+              </button>
+            </div>
+
+            <div class="producto papeleria">
+              <picture>
+                <img
+                  loading="lazy"
+                  src="img/ventas/productos/papeleria/rollos_impresion_termica-removebg-preview.png"
+                  alt="" />
+              </picture>
+              <p class="description__producto">Rollos De Impresión Termica</p><br>
+              <span class="precio">2,900.00</span>
+              <button class="button" onclick="comprar()">
+                <i class="fi fi-tr-cart-arrow-down"></i> Add To Cart
+              </button>
+            </div>
+
+            <div class="producto papeleria">
+              <picture>
+                <img
+                  loading="lazy"
+                  src="img/ventas/productos/papeleria/T534.png" />
+              </picture>
+              <p class="description__producto">Tinta de Impresión T534</p><br>
+              <span class="precio">600.00</span>
+              <button class="button" onclick="comprar()">
+                <i class="fi fi-tr-cart-arrow-down"></i> Add To Cart
+              </button>
+            </div>
+
+            <div class="producto redes">
+              <picture>
+                <img
+                  loading="lazy"
+                  src="img/ventas/productos/redes/TL-WR841N_EU_14.0_01_large_1524475416205c-removebg-preview.png"
+                  alt="" />
+              </picture>
+              <p class="description__producto">
+                TL-WR841N 300Mbps Wireless N Router
+              </p>
+              <span class="precio">4,300.00</span>
+              <button class="button" onclick="comprar()">
+                <i class="fi fi-tr-cart-arrow-down"></i> Add To Cart
+              </button>
+            </div>
+
+            <div class="producto papeleria">
+              <picture>
+                <img
+                  loading="lazy"
+                  src="img/ventas/productos/papeleria/T544.png"
+                  alt="" />
+              </picture>
+              <p class="description__producto">Tinta de Impresión T544</p><br>
+              <span class="precio">650.00</span>
+              <button class="button" onclick="comprar()">
+                <i class="fi fi-tr-cart-arrow-down"></i> Add To Cart
+              </button>
+            </div>
+
+            <div class="producto papeleria">
+              <picture>
+                <img
+                  loading="lazy"
+                  src="img/ventas/productos/papeleria/T664.png"
+                  alt="" />
+              </picture>
+              <p class="description__producto">Tinta de Impresión T664</p><br>
+              <span class="precio">680.00</span>
+              <button class="button" onclick="comprar()">
+                <i class="fi fi-tr-cart-arrow-down"></i> Add To Cart
+              </button>
+            </div>
+
+            <div class="producto papeleria">
+              <picture>
+                <img
+                  loading="lazy"
+                  src="img/ventas/productos/papeleria/T673.png"
+                  alt="" />
+              </picture>
+              <p class="description__producto">Tinta de Impresión T673</p><br><br>
+              <span class="precio">690.00</span>
+              <button class="button" onclick="comprar()">
+                <i class="fi fi-tr-cart-arrow-down"></i> Add To Cart
+              </button>
+            </div>
+
+            <div class="producto redes">
+              <picture>
+                <img
+                  loading="lazy"
+                  src="img/ventas/productos/redes/UTP_cat5e-removebg-preview.png"
+                  alt="" />
+              </picture>
+              <p class="description__producto">Caja Cable UTP Cat5e</p><br><br>
+
+              <span class="precio">5,500.00</span>
+              <button class="button" onclick="comprar()">
+                <i class="fi fi-tr-cart-arrow-down"></i> Add To Cart
+              </button>
+            </div>
+
+            <div class="producto redes">
+              <picture>
+                <img
+                  loading="lazy"
+                  src="img/ventas/productos/redes/01_large_1595821490842u-removebg-preview.png"
+                  alt="" />
+              </picture>
+              <p class="description__producto">
+                TL-SG105PP-M2 5-Port 2.5G Desktop Switch with 4-Port PoE++
+              </p>
+              <span class="precio">6,000.00</span>
+              <button class="button" onclick="comprar()">
+                <i class="fi fi-tr-cart-arrow-down"></i> Add To Cart
+              </button>
+            </div>
+
+            <div class="producto redes">
+              <picture>
+                <img
+                  loading="lazy"
+                  src="img/ventas/productos/redes/Archer-C64_1.0_01_large_1617155310348w-removebg-preview.png"
+                  alt="" />
+              </picture>
+              <p class="description__producto">
+                Archer C54 AC1200 Dual Band Wi-Fi Router
+              </p>
+              <span class="precio">8,000.00</span>
+              <button class="button" onclick="comprar()">
+                <i class="fi fi-tr-cart-arrow-down"></i> Add To Cart
+              </button>
+            </div>
+
+            <div class="producto papeleria">
+              <picture>
+                <img
+                  loading="lazy"
+                  src="img/ventas/productos/papeleria/T504.png"
+                  alt="" />
+              </picture>
+              <p class="description__producto">Tinta de Impresión T504</p><br><br>
+              <span class="precio">610.00</span>
+              <button class="button" onclick="comprar()">
+                <i class="fi fi-tr-cart-arrow-down"></i> Add To Cart
+              </button>
+            </div>
+
+            <div class="producto redes">
+              <picture>
+                <img
+                  loading="lazy"
+                  src="img/ventas/productos/redes/crimpadora-removebg-preview.png"
+                  alt="" />
+              </picture>
+              <p class="description__producto">Herramienta de Crimpado</p><br><br>
+              <span class="precio">3,600.00</span>
+              <button class="button" onclick="comprar()">
+                <i class="fi fi-tr-cart-arrow-down"></i> Add To Cart
+              </button>
+            </div>
+
+            <div class="producto redes">
+              <picture>
+                <img
+                  loading="lazy"
+                  src="img/ventas/productos/redes/TL-MR3420_1488350060791t-removebg-preview.png"
+                  alt="" />
+              </picture>
+              <p class="description__producto">
+                TL-MR3420 Router inalámbrico N 3G/4G
+              </p><br>
+              <span class="precio">4,000.00</span>
+              <button class="button" onclick="comprar()">
+                <i class="fi fi-tr-cart-arrow-down"></i> Add To Cart
+              </button>
+            </div>
+
+            <div class="producto redes">
+              <picture>
+                <img
+                  loading="lazy"
+                  src="img/ventas/productos/redes/TL-SG1016PE_UN_2.0-01_large_1579598351405r-removebg-preview.png"
+                  alt="" />
+              </picture>
+              <p class="description__producto">
+                TL-SG1016PE 16-Port Gigabit Easy Smart PoE Switch with 8-Port
+                PoE+
+              </p>
+              <span class="precio">7,000.00</span>
+              <button class="button" onclick="comprar()">
+                <i class="fi fi-tr-cart-arrow-down"></i> Add To Cart
+              </button>
+            </div>
+
+            <div class="producto redes">
+              <picture>
+                <img
+                  loading="lazy"
+                  src="img/ventas/productos/redes/TL-SG108-M2_UN_1.0__2.5G_switch__super_fast_01_large_1604913820285f-removebg-preview.png"
+                  alt="" />
+              </picture>
+              <p class="description__producto">
+                TL-SG108-M2 8-Port 2.5G Desktop Switch
+              </p>
+              <span class="precio">5,000.00</span>
+              <button class="button" onclick="comprar()">
+                <i class="fi fi-tr-cart-arrow-down"></i> Add To Cart
+              </button>
+            </div>
+
+            <div class="producto redes">
+              <picture>
+                <img
+                  loading="lazy"
+                  src="img/ventas/productos/redes/TL-SX1008_UN_1.0-10G_Switch-01_large_1604567666675q-removebg-preview.png"
+                  alt="" />
+              </picture>
+              <p class="description__producto">
+                TL-SG108S-M2 8-Port 2.5G Multi-Gigabit Desktop Switch
+              </p>
+              <span class="precio">4,800.00</span>
+              <button class="button" onclick="comprar()">
+                <i class="fi fi-tr-cart-arrow-down"></i> Add To Cart
+              </button>
+            </div>
+
+            <div class="producto redes">
+              <picture>
+                <img
+                  loading="lazy"
+                  src="img/ventas/productos/redes/TL-SX105_UN_1.0_01_large_1606466469598w-removebg-preview.png"
+                  alt="" />
+              </picture>
+              <p class="description__producto">
+                TL-SG105PP-M2 5-Port 2.5G Desktop Switch with 4-Port PoE++
+              </p>
+              <span class="precio">5,100.00</span>
+              <button class="button" onclick="comprar()">
+                <i class="fi fi-tr-cart-arrow-down"></i> Add To Cart
+              </button>
+            </div>
+
+            <div class="producto monitores">
+              <picture>
+                <img
+                  loading="lazy"
+                  src="img/ventas/productos/monitores/monitor-pseries-p2225h.webp"
+                  alt="" />
+              </picture>
+              <p class="description__producto">Monitor Dell 22 - P2225H</p><br>
+              <span class="precio">6,300.00</span>
+              <button class="button" onclick="comprar()">
+                <i class="fi fi-tr-cart-arrow-down"></i> Add To Cart
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- CONTACTOS -->
+      <a class="mail" id="mail" href="mailto:info@ebcomputadoras.com">email</a>
+      <footer class="contactos__section" id="Contactos">
+        <div class="contactos__footer">
+          <div class="logo__eb__footer">
+          <a href="index.html">
+          <img src="img/banner/eb_image.svg" alt="eb_logo" height="60px" />
+            <img
+              src="img/banner/comp_image.svg"
+              alt="computadoras_logo"
+              height="60px" />
+          </a>
+          </div>
+          <div class="direccion__footer content__contact">
+            <span>Ubicación:</span>
+            <p class="content__footer">
+              Plaza Belliard, Módulo 103, C. P.º de los Maestros, Jarabacoa
+              41200
+            </p>
+          </div>
+          <div class="area__servicio__footer content__contact">
+            <span>Área de Servicio:</span>
+            <p class="content__footer">Jarabacoa</p>
+            <picture class="picture">
+              <img src="img/contactos/call.png" alt="Telefono" />
+              <a href="tel:+18095746888">(809) 574-6888</a>
+            </picture>
+            <picture class="picture">
+              <img src="img/contactos/email.png" alt="Correo" />
+              info@ebcomputadoras.com
+            </picture>
+          </div>
+        </div>
+
+        <form id="form" class="form">
+          <div class="title form__title">Contáctanos</div>
+          <input
+            name="name"
+            type="text"
+            placeholder="Nombre Completo"
+            class="input"
+            required />
+          <input
+            name="email"
+            type="email"
+            placeholder="Correo Electrónico"
+            class="input"
+            required />
+          <textarea name="mensaje" placeholder="Tu Mensaje" required></textarea>
+          <div class="btns">
+            <button type="submit">Enviar</button>
+            <button type="reset">Reset</button>
+          </div>
+        </form>
+
+        <div class="horario">
+          <table class="horario">
+            <tr>
+              <th colspan="2">
+                <font size="5" color="#b80f0f"> Horarios </font>
+              </th>
+            </tr>
+            <tr>
+              <th>Domingo</th>
+              <td>Cerrado</td>
+            </tr>
+            <tr>
+              <th>Lunes</th>
+              <td>8AM - 6PM</td>
+            </tr>
+            <tr>
+              <th>Martes</th>
+              <td>8AM - 6PM</td>
+            </tr>
+            <tr>
+              <th>Miercoles</th>
+              <td>8AM - 6PM</td>
+            </tr>
+            <tr>
+              <th>Jueves</th>
+              <td>8AM - 6PM</td>
+            </tr>
+            <tr>
+              <th>Viernes</th>
+              <td>8AM - 6PM</td>
+            </tr>
+            <tr>
+              <th>Sábado</th>
+              <td>Cerrado</td>
+            </tr>
+          </table>
+          <div class="redes__sociales">
+            <picture>
+              <a
+                target="_blank"
+                href="https://www.instagram.com/ebcomputadoras/">
+                <img src="img/ventas/instagram.svg" alt="instagram" />
+              </a>
+            </picture>
+
+            <picture>
+              <a
+                target="_blank"
+                href="https://www.facebook.com/ebcomputadoras?locale=es_LA">
+                <img src="img/ventas/facebook.svg" alt="facebook" />
+              </a>
+            </picture>
+
+            <picture>
+              <a
+                target="_blank"
+                href="https://api.whatsapp.com/send?phone=%2B18095746888&data=ARAdDLLSIf5JjP6FwYcyURjEJYEbG_mjDc5DkaKb8u5nXMBT1C5Zux6Ct1snt1_J-OSBqNO9BjJotg3T-_P6nPWUwd0Xd3DttqDrBCadaN9sB_Whz34vJhRtAxMe4qKJO9unu6LXDUbkWy6_NGcaOfFwYA&source=FB_Page&app=facebook&entry_point=page_cta&fbclid=IwAR1yRkBMI5jYQzOhVBK5hrEiosHHVxrZWUWzzQzdO8nqt2R-TxX4VaKtR8g_aem_AaHe6jlVX_QxtqjfLCRNAsDDb1MCSj3S0n8OpVTkgyq8ZBE8XXBfZ6KJvs5ZdsziBT16Hq2PK0eaZBbn_ObNTF9Z">
+                <img src="img/ventas/whatsapp.svg" alt="whatsapp" />
+              </a>
+            </picture>
+          </div>
+        </div>
+      </footer>
+      <div class="copyright">
+        <span
+          >© Copyright 2024 EB Computadoras | SamiDev Todos los Derechos
+          Reservados.
+        </span>
+        <a id="arriba" href="#header">
+          <div class="arriba">
+            <i class="fi fi-rr-up" style="color: rgb(177, 177, 177)"></i>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/sweetalert.js"></script>
+  </body>
+</html>
